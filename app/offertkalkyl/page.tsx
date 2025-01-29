@@ -77,8 +77,8 @@ export default function Offertkalkyl() {
     formData.type == 0 || formData.size == 0 || formData.owners === 0;
 
   return (
-    <div className="px-4 flex flex-col lg:flex-row items-center justify-end lg:justify-evenly h-screen">
-      <div>
+    <div className="px-4 mb-6 flex flex-col lg:flex-row items-center justify-end lg:justify-evenly min-h-screen">
+      <div className="relative w-full lg:w-auto lg:static h-16 mb-6">
         <h1 className="hidden lg:block text-center mb-2 text-2xl lg:text-4xl xl:text-5xl">
           Takoffertkalkyl
         </h1>
@@ -86,20 +86,20 @@ export default function Offertkalkyl() {
           Fyll i dina uppgifter för att få en offert
         </h2>
         <Image
-          className="hidden lg:block"
+          className="hidden lg:block mx-auto"
           width="300"
           height="200"
           src={Logo}
           alt={"Svenska Takvisionärerna logo"}
         />
         <Image
-          className="block lg:hidden absolute right-4 top-4"
+          className="block lg:hidden absolute right-0 md:right-4 top-4"
           width="80"
           height="80"
           src={Logo}
           alt={"Svenska Takvisionärerna logo"}
         />
-        <div className="absolute left-4 top-4">
+        <div className="absolute md:left-4 top-4">
           <Link href="/">
             <Button variant="contained" startIcon={<HomeIcon />}>
               Tillbaka
