@@ -15,7 +15,7 @@ import { pdf } from "@react-pdf/renderer";
 import { months } from "../constants";
 import DownloadIcon from "@mui/icons-material/Download";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import Logo from "@/public/logo.png";
+import Logo from "@/app/assets/images/logo.png";
 import Image from "next/image";
 
 interface FormData {
@@ -93,13 +93,13 @@ export default function Offertkalkyl() {
           alt={"Svenska Takvisionärerna logo"}
         />
         <Image
-          className="block lg:hidden absolute right-6 top-6"
+          className="block lg:hidden absolute right-4 top-4"
           width="80"
           height="80"
           src={Logo}
           alt={"Svenska Takvisionärerna logo"}
         />
-        <div className="absolute left-6 top-">
+        <div className="absolute left-4 top-4">
           <Link href="/">
             <Button variant="contained" startIcon={<HomeIcon />}>
               Tillbaka
