@@ -16,7 +16,7 @@ import { months } from "../constants";
 import DownloadIcon from "@mui/icons-material/Download";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import Logo from "@/public/logo.png";
-// import Image from "next/image";
+import Image from "next/image";
 
 interface FormData {
   type: number;
@@ -85,7 +85,7 @@ export default function Offertkalkyl() {
         <h2 className="hidden lg:block text-center mb-2 text-lg">
           Fyll i dina uppgifter för att få en offert
         </h2>
-        {/*   <Image
+        <Image
           className="hidden lg:block"
           width="300"
           height="200"
@@ -98,8 +98,8 @@ export default function Offertkalkyl() {
           height="80"
           src={Logo}
           alt={"Svenska Takvisionärerna logo"}
-        /> */}
-        <div className="absolute left-6 top-6">
+        />
+        <div className="absolute left-6 top-">
           <Link href="/">
             <Button variant="contained" startIcon={<HomeIcon />}>
               Tillbaka
